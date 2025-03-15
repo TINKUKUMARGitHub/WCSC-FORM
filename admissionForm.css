@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+form {
+  border: 5px double navy;
+  margin: 15px;
+  padding: 15px;
+}
+
+/* logo section  */
+.logo {
+  display: flex;
+}
+.logo_left {
+  margin-left: 20px;
+}
+.logo_right {
+  margin-left: auto;
+  padding: 10px;
+}
+
+/* heading section  */
+.header {
+  margin-top: 0px;
+}
+.heading1 {
+  font-size: 4rem;
+  text-align: center;
+  color: navy;
+  text-transform: uppercase;
+}
+.intro {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.heading2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.year {
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: 10px;
+}
+.uppercase_only {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: red;
+}
+
+/* user information section  */
+
+.user_info {
+  text-transform: uppercase;
+  padding: 10px;
+  line-height: 40px;
+}
+
+/* image section  */
+
+.img {
+  display: inline-block;
+  border: 5px solid navy;
+  max-width: 210px;
+  height: 210px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  left: 1000px;
+  top: 400px;
+}
+
+/* address informations section */
+
+h4 {
+  color: navy;
+}
+.address_container {
+  display: flex;
+  margin: 10px;
+}
+
+.local_address,
+.permanent_address {
+  line-height: 40px;
+}
+.permanent_address {
+  margin-left: 250px;
+}
+
+/* qualification section */
+
+.qualification {
+  margin: 10px;
+}
+
+.edu_sec_1 {
+  line-height: 40px;
+}
+
+/* course applied */
+.course_applied {
+  margin-left: 700px;
+  font-weight: 700;
+  color: navy;
+}
+
+/* applicant signature  */
+
+.applicant_sign {
+  margin-left: 490px;
+  font-weight: 650;
+  color: navy;
+}
+.applicant_signature {
+  width: 200px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+/* for office use only  */
+
+.horizontal_line {
+  border: 2px double black;
+}
+.office_use {
+  margin-top: 15px;
+}
+.office_use {
+  text-decoration: underline;
+}
+
+.office_work {
+  display: flex;
+  margin: 10px;
+}
+.office_work_sec1,
+.office_work_sec2 {
+  line-height: 40px;
+}
+.office_work_sec2 {
+  margin-left: 285px;
+}
+.class_incharge {
+  margin-left: 650px;
+}
+.incharge_sign {
+  width: 200px;
+  height: 30px;
+  border: 1px solid black;
+}
+.class_incharge {
+  color: navy;
+  font-weight: 600;
+}
+
+/* footer section */
+.doc_attach {
+  text-align: center;
+}
+
+.req_doc {
+  text-align: center;
+}
+
+.address_sunfoundation {
+  margin-top: 10px;
+  padding-top: 10px;
+  text-align: center;
+  border-top: 1px solid black;
+}
+.contact_details {
+  text-align: center;
+}
+
+/* submit button  */
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: navy;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 5px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}

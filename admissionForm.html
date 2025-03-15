@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form_Sun foundation</title>
+    <link
+      rel="shortcut icon"
+      href="./Logo/sunfoundation logo.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="admissionForm.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="#" target="_blank">
+      <!-- Logo Section -->
+      <div class="logo">
+        <div class="logo_left">
+          <img src="./Logo/skill india logo.jpg" alt="skill india logo" />
+          <img src="./Logo/nsdc logo.png" alt="nsdc logo" />
+        </div>
+        <div class="logo_right">
+          <img src="./Logo/dt&te,delhi logo.jpg" alt="dt&te delhi logo" />
+          <img
+            src="./Logo/sunfoundation logo.jpg"
+            alt="sunfoundation logo"
+            width="200"
+          />
+        </div>
+      </div>
+
+      <!-- header section -->
+      <div class="header">
+        <h1 class="heading1">world class skill centre</h1>
+        <div class="para1">
+          <p class="intro">An initiative of sun foundation and</p>
+          <p class="intro">
+            Directorate of training and technical education,govt.of NCT of delhi
+          </p>
+        </div>
+        <h2 class="heading2">admission form</h2>
+      </div>
+
+      <div class="year_cls">
+        <h3 class="year">year: <input type="date" name="year" id="year" /></h3>
+      </div>
+
+      <div>
+        <p class="uppercase_only">
+          <sup>*</sup>please fill the form in capital letter only
+        </p>
+      </div>
+
+      <!-- user information section -->
+
+      <div class="user_info">
+        <label for="username">name of applicant &nbsp;:&emsp;</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Name of Applicant"
+          size="40"
+          required
+        />
+
+        <br />
+
+        <label for="dob">date of birth &nbsp;:&emsp;</label>
+        <input type="datetime-local" name="dob" id="dob" required />
+        <br />
+
+        <label for="category">category &nbsp;: &emsp;</label>
+        <input type="radio" name="category" id="category" required /><span
+          >&ensp;gen</span
+        >
+        <input type="radio" name="category" id="category" /><span
+          >&ensp;obc</span
+        >
+        <input type="radio" name="category" id="category" /><span
+          >&ensp;sc</span
+        >
+        <input type="radio" name="category" id="category" /><span
+          >&ensp;st</span
+        >
+        <br />
+
+        <label for="gender">gender &nbsp;:&emsp; </label>
+        <input type="radio" name="gender" id="gender" required /><span
+          >&ensp;male</span
+        >
+        <input type="radio" name="gender" id="gender" /><span
+          >&ensp;female</span
+        >
+        <input type="radio" name="gender" id="gender" /><span
+          >&ensp;transgender</span
+        >
+        <br />
+
+        <label for="marital_status">marital status &nbsp;: &emsp;</label>
+        <input
+          type="radio"
+          name="marital_status"
+          id="marital_status"
+          required
+        /><span>&ensp;married</span>
+        <input type="radio" name="marital_status" id="marital_status" /><span
+          >&ensp;unmarried</span
+        >
+
+        <br />
+
+        <label for="guardians">father's/husband's name &nbsp;:&emsp;</label>
+        <input
+          type="text"
+          name="guardians"
+          id="guardians"
+          placeholder="Father's/Husband's Name"
+          size="40"
+          required
+        />
+
+        <label for="mothers_name">&emsp;mother's name &nbsp;:&emsp;</label>
+        <input
+          type="text"
+          name="mothers_name"
+          id="mothers_name"
+          placeholder="Mother's Name"
+          size="40"
+          required
+        />
+        <br />
+
+        <label for="religions">religions &nbsp;:&emsp;</label>
+        <select name="religions" id="religions" required>
+          <option value="hindu">Hindu</option>
+          <option value="islam">Islam</option>
+          <option value="sikhism">Sikhism</option>
+          <option value="buddhism">Buddhism</option>
+          <option value="others">Others</option>
+        </select>
+        <br />
+
+        <!-- Paste Recent Passport Size Photograph -->
+
+        <div class="img">
+          <label for="image-upload">
+            Paste Recent Passport Size Photograph</label
+          >
+          <input type="file" name="image" id="image-upload" required />
+        </div>
+      </div>
+
+      <!-- address  section -->
+
+      <div class="address_container">
+        <div class="local_address">
+          <h4>LOCAL ADDRESS</h4>
+          <label for="home_no">HOME NAME & NO &nbsp;:&emsp;</label>
+          <input
+            type="text"
+            name="home_no"
+            id="home_no"
+            placeholder="HOME NAME & NO "
+            required
+          />
+          <br />
+
+          <label for="district">DISTRICT &nbsp;:&emsp;</label>
+          <input
+            type="text"
+            name="district"
+            id="district"
+            placeholder="DISTRICT "
+            required
+          />
+          <br />
+
+          <label for="parliament_constituency"
+            >PARLIAMENT CONSTITUENCY &nbsp;:&emsp;</label
+          >
+          <input
+            type="text"
+            name="parliament_constituency"
+            id="parliament_constituency"
+            size="25"
+            placeholder="PARLIAMENT CONSTITUENCY "
+            required
+          />
+          <br />
+
+          <label for="pin_code">PIN CODE &nbsp; :&emsp;</label>
+          <input
+            type="text"
+            name="pin_code"
+            id="pin_code"
+            placeholder="PIN CODE"
+            required
+          />
+          <br />
+
+          <label for="whatsapp_no">WHATSAPP NO &nbsp;: &emsp;</label>
+          <input
+            type="tel"
+            name="whatsapp_no"
+            id="whatsapp_no"
+            placeholder="78-305-33-666"
+            pattern="[o-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            required
+          />
+          <br />
+        </div>
+
+        <!-- permanent_address information -->
+
+        <div class="permanent_address">
+          <h4>PERMANENT ADDRESS(as on Aadhar Card)</h4>
+          <label for="home_number">HOME NAME & NO &nbsp;:&emsp;</label>
+          <input
+            type="text"
+            name="home_number"
+            id="home_number"
+            placeholder="HOME NAME & NO "
+            required
+          />
+          <br />
+
+          <label for="distt">DISTRICT &nbsp;:&emsp;</label>
+          <input
+            type="text"
+            name="distt"
+            id="distt"
+            placeholder="DISTRICT "
+            required
+          />
+          <br />
+
+          <label for="parliaments_constituency"
+            >PARLIAMENT CONSTITUENCY &nbsp;:&emsp;</label
+          >
+          <input
+            type="text"
+            name="parliaments_constituency"
+            id="parliaments_constituency"
+            size="25"
+            placeholder="PARLIAMENT CONSTITUENCY "
+            required
+          />
+          <br />
+
+          <label for="pin_no">PIN CODE &nbsp; :&emsp;</label>
+          <input
+            type="text"
+            name="pin_no"
+            id="pin_no"
+            placeholder="PIN CODE"
+            required
+          />
+          <br />
+
+          <label for="parents_contact_no"
+            >PARENTS CONTACT NO &nbsp;: &emsp;</label
+          >
+          <input
+            type="tel"
+            name="parents_contact_no"
+            id="parents_contact_no"
+            placeholder="79-305-39-786"
+            pattern="[o-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            required
+          />
+          <br />
+        </div>
+      </div>
+
+      <!-- qualification section -->
+
+      <div class="qualification">
+        <div class="edu_sec_1">
+          <!-- education qualification -->
+          <label for="education">EDUCATION QUALIFICATION &nbsp;:&emsp;</label>
+          <input
+            type="checkbox"
+            name="education"
+            id="education"
+            required
+          /><span> &nbsp;10th</span>
+          <input type="checkbox" name="education" id="education" /><span>
+            &nbsp;12th</span
+          >
+          <input type="checkbox" name="education" id="education" /><span>
+            &nbsp;Graduate</span
+          >
+          <input type="checkbox" name="education" id="education" /><span>
+            &nbsp;Post-Graduate</span
+          >
+          <br />
+
+          <!-- technical qualification -->
+          <label for="tech_edu">TECHNICAL QUALIFICATION &nbsp;:&emsp;</label>
+          <input type="checkbox" name="tech_edu" id="tech_edu" required /><span>
+            &nbsp;ITI</span
+          >
+          <input type="checkbox" name="tech_edu" id="tech_edu" /><span>
+            &nbsp;DIPLOMA</span
+          >
+          <input type="checkbox" name="tech_edu" id="tech_edu" /><span>
+            &nbsp;B.E/BTECH
+          </span>
+          <input type="checkbox" name="tech_edu" id="tech_edu" /><span>
+            &nbsp;M.E/MTECH</span
+          >
+          <br />
+
+          <label for="aadhar_no">AADHAR NO &nbsp;: &emsp;</label>
+          <input
+            type="text"
+            name="aadhar_no"
+            id="aadhar_no"
+            size="1"
+            required
+          />
+          <input type="text" name="aadhar_no" id="aadhar_no" size="1" />
+          <input type="text" name="aadhar_no" id="aadhar_no" size="1" />
+          <input type="text" name="aadhar_no" id="aadhar_no" size="1" />
+          <input type="text" name="aadhar_no" id="aadhar_no" size="1" />
+          <input type="text" name="aadhar_no" id="aadhar_no" size="1" />
+          <input type="text" name="aadhar_no" id="aadhar_no" size="1" />
+          <input type="text" name="aadhar_no" id="aadhar_no" size="1" />
+          <input type="text" name="aadhar_no" id="aadhar_no" size="1" />
+          <input type="text" name="aadhar_no" id="aadhar_no" size="1" />
+          <input type="text" name="aadhar_no" id="aadhar_no" size="1" />
+          <input type="text" name="aadhar_no" id="aadhar_no" size="1" />
+
+          <br />
+
+          <label for="email">EMAIL ID &nbsp;: &emsp;</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            size="50"
+            placeholder="User Email-Id"
+            required
+          />
+
+          <label for="course_applied" class="course_applied"
+            >COURSE APPLIED FOR &nbsp;: &emsp;</label
+          >
+          <select name="course" id="course_applied" required>
+            <option value="web developer">WEB DEVELOPER</option>
+            <option value="junior software developer">
+              JUNIOR SOFTWARE DEVELOPER
+            </option>
+            <option value="data entry operator">DATA ENTRY OPERATOR</option>
+            <option value="graphic designer">GRAPHIC DESIGNER</option>
+            <option value="others">OTHERS</option>
+          </select>
+          <br />
+
+          <label for="admission_date">DATE &nbsp;:&emsp;</label>
+          <input
+            type="date"
+            name="admission date"
+            id="admission_date"
+            required
+          />
+
+          <label for="applicant_sign" class="applicant_sign"
+            >APPLICANT SIGNATURE &nbsp;: &emsp;</label
+          >
+          <input
+            type="file"
+            name="applicant_sign"
+            id="applicant_sign"
+            class="applicant_signature"
+            required
+          />
+        </div>
+      </div>
+
+      <!-- for office use only sections -->
+      <hr class="horizontal_line" />
+      <h2 class="heading2 office_use">for office use only</h2>
+      <!-- office work section1 -->
+      <div class="office_work">
+        <div class="office_work_sec1">
+          <label for="registration_no"
+            >REGISTRATION NO &nbsp;:&nbsp;WCSC / &emsp;</label
+          >
+          <input
+            type="text"
+            name="registration_no"
+            id="registration_no"
+            placeholder="Registration_no"
+            required
+          />
+          <br />
+          <label for="candidate_id">CANDIDATE ID &nbsp;: &emsp;</label>
+          <input
+            type="text"
+            name="candidate_id"
+            id="candidate_id"
+            placeholder="Candidate_id"
+            required
+          />
+          <br />
+          <label for="batch_id">BATCH ID &nbsp;: &emsp;</label>
+          <input
+            type="text"
+            name="batch_id"
+            id="batch_id"
+            placeholder="Batch_id"
+            required
+          />
+          <br />
+          <label for="receipt_no">RECEIPT ID &nbsp;: &emsp;</label>
+          <input
+            type="text"
+            name="receipt_no"
+            id="receipt_no"
+            placeholder="Receipt_no"
+            required
+          />
+          <br />
+        </div>
+
+        <!--office work  section2 -->
+        <div class="office_work_sec2">
+          <label for="course_alloted">COURSE ALLOTED&nbsp;: &emsp;</label>
+          <input
+            type="text"
+            name="course_alloted"
+            id="course_alloted"
+            placeholder="Course_Alloted Name"
+            required
+          />
+          <br />
+          <label for="course_start_date">COURSE START DATE&nbsp;: &emsp;</label>
+          <input
+            type="date"
+            name="course_start_date"
+            id="course_start_date"
+            placeholder="Course_Start_Date"
+            required
+          />
+          <br />
+          <label for="course_finish_date"
+            >COURSE FINISH DATE&nbsp;: &emsp;</label
+          >
+          <input
+            type="date"
+            name="course_finish_date"
+            id="course_finish_date"
+            placeholder="Course_Finish_Date"
+            required
+          />
+          <br />
+          <label for="approved_date">DATE &nbsp;:&emsp;</label>
+          <input type="date" name="approved_date" id="approved_date" required />
+        </div>
+      </div>
+
+      <label for="incharge_sign" class="class_incharge">
+        SIGNATURE OF ADMISSION INCHARGE &nbsp;: &emsp;</label
+      >
+      <input
+        type="file"
+        name="incharge_sign"
+        id="incharge_sign"
+        class="incharge_sign"
+        required
+      />
+      <br />
+      <!-- footer section -->
+
+      <h4 class="doc_attach">(DOCUMENTS TO BE ATTACHED)</h4>
+      <p class="req_doc">
+        <strong
+          ><sup>*</sup>2 PASSPORT SIZE PHOTOS <sup>*</sup> LAST QUALIFICATION
+          CERTIFICATE <sup>*</sup> TECHNICAL QUALIFICATION CERTIFICATE(IF
+          APPLICABLE) <sup>*</sup>AADHAR CARD</strong
+        >
+      </p>
+      <p class="address_sunfoundation">
+        <strong>Address &nbsp;: &nbsp;</strong> ITI Campus ,Jail Road,Hari Nagar
+        ,New Delhi - 110064
+      </p>
+      <p class="contact_details">
+        <strong>Tel &nbsp;: &nbsp;</strong>91-8287216246,91-11-25121111,42717116
+        | <strong>E-mail &nbsp;: &nbsp;</strong>info@sunfoundationindia.org
+      </p>
+
+      <!-- submit button -->
+      &emsp;
+      <button type="submit">SUBMIT</button>
+    </form>
+  </body>
+</html>
